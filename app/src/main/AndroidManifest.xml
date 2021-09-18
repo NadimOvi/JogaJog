@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nadim.jogajogapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppsTheme">
+        <activity android:name=".MainDashboard.SupportReportActivity.SupportHistoryActivity"></activity>
+        <activity
+            android:name=".MainDashboard.SupportReportActivity.DemoTest2Activity"
+            android:theme="@style/ProfileThemes" />
+        <activity
+            android:name=".MainDashboard.SupportReportActivity.ItemPreviewActivity"
+            android:theme="@style/ProfileThemes" />
+        <activity
+            android:name=".MainDashboard.SupportReportActivity.DemoTestActivity"
+            android:theme="@style/ProfileThemes" />
+        <activity android:name=".MainDashboard.SupportReportActivity.SupportActivity" />
+        <activity android:name=".MainDashboard.CallLogData.CallLogActivity" />
+        <activity
+            android:name=".MainDashboard.PhoneBookContactList.PhoneBookContactActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CustomerContactActivity.CreateOpportunityActivity" />
+        <activity android:name=".CustomerCall.CallHistoryEditActivity" />
+        <activity android:name=".MainDashboard.NewContact.CreateContactActivity" />
+        <activity android:name=".CustomerContactActivity.CustomerActivity" />
+        <activity android:name=".CustomerCall.CallHistoryActivity" />
+        <activity android:name=".RemainderForPersonal.Adapter.views.MainActivity" />
+        <activity
+            android:name=".MainDashboard.CallLogData.StatisticsActivity"
+            android:label="Statistics"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainDashboard.UserDashboardActivity"
+            android:theme="@style/ProfileTheme">
+
+            <!-- <action android:name= "android.intent.action.SEARCH"/> -->
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/AppsTheme" />
+        <activity
+            android:name=".RemainderForPersonal.Adapter.views.NewEventActivity"
+            android:theme="@style/DarkIndigoTheme" />
+        <activity
+            android:name=".RemainderForPersonal.Adapter.views.EditEventActivity"
+            android:theme="@style/DarkIndigoTheme" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name=".CustomerCall.CallReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/DarkIndigoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_app" />
+
+        <service
+            android:name=".RemainderForPersonal.Adapter.other.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/DarkIndigoTheme" />
+
+        <receiver
+            android:name=".RemainderForPersonal.Adapter.other.ServiceAutoLauncher"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/DarkIndigoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CustomerCall.Others.NotificationMessage" />
+        <activity android:name=".CustomerCall.Others.CreateEvent" />
+        <activity android:name=".MainDashboard.NewContact.NewContactActivity" />
+        <activity android:name=".CustomerCall.Others.MainActivity" />
+
+        <receiver
+            android:name=".CustomerCall.Others.BootUpReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".CustomerCall.Others.AlarmBrodcast" />
+
+        <service android:name=".MainDashboard.SupportReportActivity.FetchAddressIntentService" />
+    </application>
+
+</manifest>

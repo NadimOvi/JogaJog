@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".CustomerContactActivity.CustomerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/lexenddeca"
+                android:textSize="20dp"
+                android:text="Opportinity"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/opportunityimageshow"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/companyNamesTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ABC Company Limited"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/lexenddeca"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_person_24" />
+                        <TextView
+                            android:id="@+id/contactPersonTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="abcd name"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:fontFamily="@font/lexenddeca"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_baseline_contact_phone_24" />
+                        <TextView
+                            android:id="@+id/personPhoneNumberTxt"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="+8801722602924"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lexenddeca"/>
+
+                        <ImageButton
+                            android:id="@+id/telephoneBtn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/phone_call_icon_latest"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="30dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/newOpportunityBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/opportunityimage"
+                    android:text="New Opportunity"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/dashboardColor"
+                    android:fontFamily="@font/lexenddeca"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/makeReminderBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/makeschedule"
+                    android:text="Make Reminder"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/dashboardColor"
+                    android:fontFamily="@font/lexenddeca"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/supportReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_support_24"
+                    android:text="Support Report"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/dashboardColor"
+                    android:fontFamily="@font/lexenddeca"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCustomerView"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"/>
+    </LinearLayout>
+
+</LinearLayout>

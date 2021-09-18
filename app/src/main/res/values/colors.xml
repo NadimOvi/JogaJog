@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!--   <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="textColor">#676767</color>
+    <color name="gray">#F6F6F6</color>
+    <color name="grey">#E9EAEE</color>
+
+
+    <color name="navigationMenuColor">#154B9D</color>
+<!--    <color name="green">#0AAE87</color>-->
+
+    <color name="backgroundMenuColor">#0AAE87</color>
+
+    <color name="dashboardColor">#0097FF</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="navgroundColor">#004D91</color>
+
+    <color name="transperentColor">#00000000</color>
+    <color name="hintColor">#8b000000</color>
+
+    <color name="toolbar_title">#ffffff</color>
+    <color name="primary">#37474f</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+
+    <color name="colorPrimary">#118faf</color>
+    <color name="colorPrimaryDark">#0f7e9b</color>
+    <color name="colorAccent">#575757</color>
+    <color name="green"> #3CB371</color>
+    <color name="red">#DC143C</color>
+    <color name="blue">#00BFFF</color>
+
+   <color name="Indigo">#2c3e50</color>
+   <color name="yellow">#F1C40F</color>
+   <color name="brown">#312723</color>
+   <color name="cyan">#00E5FF</color>
+   <color name="pink">#F50057</color>
+   <color name="deepPurple">#673AB7</color>
+   <color name="white">#FFFFFF</color>
+   <color name="black">#000000</color>
+   <color name="lime">#C6FF00</color>
+   <color name="darkIndigo">#212E3A</color>
+   <color name="darkIndigo2">#3C4955</color>
+   <color name="lightIndigo">#A0BDD8</color>
+   <color name="Grey">#5E5E5E</color>
+   <color name="lightGrey">#C5C5C5</color>
+   <color name="darkGrey">#35363A</color>
+   <color name="darkGrey2">#252525</color>
+   <color name="lightGrey2">#5A5A5A</color>
+   <color name="lBlack">#1F1F1F</color>
+   <color name="Grey900">#212121</color>
+   <color name="Grey800">#424242</color>
+</resources>

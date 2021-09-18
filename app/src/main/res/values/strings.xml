@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">JogaJog</string>
+
+    <string name="version_code">1.0.1</string>
+    <string name="brandName"><![CDATA[Powered by \n Genuine Technology & Research Limited]]></string>
+    <string name="android_version">App Version</string>
+    <string name="menu_bar">Menu</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    ///Profile
+
+    <string name="profile_creator_alert_read_fail">Unable to read details</string>
+    <string name="profile_creator_alert_read_fail_retry">Rescan</string>
+    <string name="profile_creator_alert_read_fail_manual">Enter manually</string>
+    <string name="profile_creator_alert_read_fail_exit">Exit</string>
+    <string name="profile_creator_form_name">Name</string>
+    <string name="profile_creator_form_job_title">Job Title</string>
+    <string name="profile_creator_form_company">Company</string>
+    <string name="profile_creator_form_telephone">Telephone</string>
+    <string name="profile_creator_form_email">Email</string>
+    <string name="profile_creator_button_save_form">Save</string>
+    <string name="profile_creator_button_rescan">Rescan</string>
+    <string name="profile_creator_button_exit">Exit</string>
+    <string name="profile_creator_confirm_rescan">Discard this profile and rescan?</string>
+    <string name="profile_creator_confirm_exit">Discard this profile and exit?</string>
+    <string name="profile_creator_save_invalid_title">Invalid profile</string>
+    <string name="profile_creator_save_invalid_message">A profile requires a name and company. Please try again.</string>
+    <string name="profile_creator_save_success_message">The profile has been successfully saved.</string>
+    <string name="profile_creator_save_success_scan_another">Scan another</string>
+    <string name="profile_creator_select_button">Select</string>
+
+
+    <string name="dialog_confirmation">Are you sure?</string>
+    <string name="dialog_success">Success!</string>
+    <string name="dialog_error_message">Unfortunately, something went wrong...</string>
+    <string name="dialog_error">Error!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="profile_list_button">View Profiles</string>
+
+
+    <string name="camera_reader_button">Start Scanning</string>
+    <string name="camera_reader_instructions">Hold the business card in front of the device\'s camera, then start scanning!</string>
+
+
+    <string name="profile_viewer_return_to_list_button">Return to list</string>
+    <string name="title_activity_demo">MainActivity</string>
+    <string name="title_opportunity">New Opportunity</string>
+    <string name="title_history">History</string>
+    <string name="title_schedule">Make Schedule</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_contact_list">Save Contact List</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_activity_add_reminder">Add Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+
+    <string name="add_reminder">Reminder</string>
+    <string name="details">Details</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_reminder">Discard Reminder</string>
+    <string name="action_save_reminder">Save Reminder</string>
+
+    <string name="no_reminders">Click on the plus button below to begin creating your reminders!</string>
+
+    <string-array name="reason">
+        <item>Call</item>
+        <item>Meeting</item>
+        <item>Demo</item>
+        <item>Technical</item>
+        <item>Visit</item>
+        <item>Quotation</item>
+    </string-array>
+
+
+    ///////////////////////
+    <string name="current_date">Current Date</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="empty" />
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="user_settings">User Settings</string>
+    <string name="calendar">Calendar</string>
+    <string name="save_event">Save Event</string>
+    <string name="event">Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="add_a_location">Add a location</string>
+    <string name="add_people">Add People</string>
+    <string name="add">Add</string>
+    <string name="add_from_contacts">Add From Contacts</string>
+    <string name="add_your_notes">Add your notes</string>
+    <string name="date">Date</string>
+    <string name="_06_apr_2020">06-Apr-2020</string>
+    <string name="time">Time</string>
+    <string name="_12_00_am">12:00 AM</string>
+    <string name="duration_0_hours_0_minutes">DURATION: 0 HOURS 0 MINUTES</string>
+    <string name="events">Events</string>
+    <string name="add_event">Add Event</string>
+    <string name="no_event_to_display">No event to display!</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="note_color">Note Color</string>
+    <string name="send_mail">Send mail</string>
+    <string name="week">Week</string>
+    <string name="next_seven_days">Next 7 days</string>
+    <string name="period">Period</string>
+    <string name="today">Today</string>
+    <string name="next_7_days">Next 7 days</string>
+    <string name="next_30_days">Next 30 days</string>
+    <string name="all_events">All Events</string>
+    <string name="notification_preference">Notification Preference</string>
+    <string name="_10_minutes_before">10 minutes before</string>
+    <string name="_1_hour_before">1 hour before</string>
+    <string name="_1_day_before">1 day before</string>
+    <string name="at_the_time_of_event">At the time of event</string>
+    <string name="back">BACK</string>
+    <string name="share">Share</string>
+    <string name="mail">Mail</string>
+    <string name="ok">OK</string>
+    <string name="one_time_event">One-time event</string>
+    <string name="add_notification">Add Notification</string>
+    <string name="repetition">Repetition</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="weekly">Weekly</string>
+    <string name="yearly">Yearly</string>
+    <string name="one_time">One-Time</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="default_info_title">Istanbul, Turkey</string>
+    <string name="default_info_snippet">Current Location</string>
+    <string name="select_this_location">Select this location</string>
+    <string name="default_ringtone">Ringtone</string>
+    <string name="default_reminder_time">Reminder Time</string>
+    <string name="default_reminder_frequency">Reminder Frequency</string>
+    <string name="app_theme">App Theme</string>
+    <string name="dark">Dark</string>
+    <string name="indigo">Indigo</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="consequence">Consequence</string>
+    <string name="juntos">Juntos</string>
+    <string name="piece_of_cake">Piece of cake</string>
+    <string name="point_blank">Point blank</string>
+    <string name="slow_spring_board">Slow spring board</string>
+    <string name="notifications">Notifications</string>
+    <string name="don_t_forget_to_buy_a_gift">Don\'t forget to buy a gift</string>
+    <string name="location">Location</string>
+    <string name="event_details">Event Details</string>
+</resources>

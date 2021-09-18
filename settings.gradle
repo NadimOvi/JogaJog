@@ -1,0 +1,3 @@
+include ':shapednavigationview'
+include ':app'
+rootProject.name = "JogaJogApplication"

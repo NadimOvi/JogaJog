@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".MainDashboard.NewContact.CreateContactActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/choose_image"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+
+                android:background="@drawable/border_view_call_history"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/label_name"
+                    android:text="Person Name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/input_name"
+                        android:layout_width="250dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/name_candidates_button"
+                        android:text="select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/border_view_call_history"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/label_job_title"
+                android:text="Job Title"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_job_title"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/job_title_candidates_button"
+                    android:text="Select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/border_view_call_history"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/label_company"
+                    android:text="Company Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/input_company"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp" />
+                   &lt;!&ndash; <Button
+                        android:id="@+id/company_candidates_button"
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />&ndash;&gt;
+                </LinearLayout>
+            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/border_view_call_history"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/label_companyTextView"
+                    android:text="Company"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/companyInput"
+                        android:inputType="text"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content" />
+                     <Button
+                       android:id="@+id/company_candidates_button"
+                       android:text="Select"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/border_view_call_history"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/label_telephone"
+                    android:text="Phone Number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/input_telephone"
+                        android:inputType="phone"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/telephone_candidates_button"
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/border_view_call_history"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/label_email"
+                    android:text="Email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/email_candidates_button"
+                        android:text="Select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/save_button"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/rescan_button"
+                    android:text="Rescan"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+             <!--   <Button
+                    android:id="@+id/exit_button"
+                    android:text="Exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
